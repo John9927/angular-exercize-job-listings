@@ -1,0 +1,14 @@
+ul {
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  padding-left: 0px;
+}
+
+li:first-child {
+  list-style: none
+}
+
+li {
+  color: grey;
+}

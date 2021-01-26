@@ -1,1 +1,21 @@
-/* You can add global styles to this file, and also import other style files */
+html {
+  background-color: rgb(225, 248, 240);
+}
+
+.card {
+  background-color: white;
+  width: 85%;
+  margin: auto;
+  display: flex;
+  margin-top: 1.5rem;
+  padding: 1rem;
+  border-radius: 0.438rem; /* PER LUCA = Ho utilizzato un tool online per convertirlo da px a Rem. Sarebbero 7px*/
+  box-shadow: 3px 3px 12px rgba(0,0,0,0.2);
+}
+
+.content__card {
+  display: flex;
+  flex-direction: row;
+  margin-top: 1rem;
+  margin-left: 2rem;
+}
