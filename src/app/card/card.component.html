@@ -1,17 +1,26 @@
 <div class="card">
   <img src="../../assets/photosnap.svg">
   <div class="content__card">
-    <div>
-      <span style="margin: 0; color:rgb(99, 212, 199); font-weight: bold;" >{{title}}</span>
-      <h4 style="margin: 0;">{{description}}</h4>
-      <div>
-        <ul style="margin: 0;">
-          <li>{{day}}</li>
-          <li style="margin-left: 20px;">{{time}}</li>
-          <li style="margin-left: 20px;">{{region}}</li>
-        </ul>
-      </div>
+    <div class="content">
+      <!-- Title, description + Flag -->
+      <span id=title>{{title}}</span>
+      <span (click)="onClickFlagNew()" id="flag__new">NEW!</span>
+      <span (click)="onClickFlagFeatured()" id="flag__featured">FEATURED</span>
+      <h4 id=description>{{description}}</h4>
+      <!-- List -->
+      <ul id=list>
+        <li>{{day}}</li>
+        <li style="margin-left: 20px;">{{time}}</li>
+        <li>{{region}}</li>
+      </ul>
+    </div>
+    <!-- ALTRI FLAG -->
+    <div class="flag">
+      <span (click)="onClickFrontend()" id="frontend">Frontend</span>
+      <span (click)="onClickSenior()" id="senior">Senior</span>
+      <span (click)="onClickHtml()" id="senior">HTML</span>
+      <span (click)="onClickCss()" id="senior">CSS</span>
+      <span (click)="onClickJavascript()" id="senior">JavaScript</span>
     </div>
   </div>
 </div>
-

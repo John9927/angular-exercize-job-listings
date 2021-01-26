@@ -9,6 +9,115 @@ li:first-child {
   list-style: none
 }
 
+li:last-child {
+  margin-left: 1.25rem;
+}
+
 li {
   color: grey;
+}
+span#title {
+  font-size: 1rem;
+  margin: 0;
+  color:rgb(99, 212, 199);
+  font-weight: bold;
+}
+
+h4#description {
+  margin-top: 0.156rem;
+  font-size: 1.063rem;
+}
+
+ul#list {
+  margin-top: 0.125rem;
+}
+
+span#flag__new {
+  font-size: 0.875rem;
+  margin-left: 0.938rem;
+  background-color: rgb(59, 184, 169);
+  border-radius: 0.75rem;
+  padding: 0.188rem;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+span#flag__featured {
+  font-size: 0.875rem;
+  margin-left: 0.625rem;
+  background-color: rgb(88, 88, 88);
+  border-radius: 0.75rem;
+  padding: 0.188rem;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+h4 {
+  margin: 0;
+}
+.content {
+  position:relative;
+}
+/* FLAG  */
+.flag {
+  position:absolute;
+  right: 10rem;
+  padding: 1.25rem
+}
+
+span#frontend {
+  font-size: 1rem;
+  margin-left: 0.625rem;
+  background-color: rgb(231, 227, 227);
+  border-radius: 0.25rem;
+  padding: 0.188rem;
+  color:  rgb(59, 184, 169);
+  font-weight: bold;
+  cursor: pointer;
+}
+
+span#senior {
+  font-size: 1rem;
+  margin-left: 0.625rem;
+  background-color: rgb(231, 227, 227);
+  border-radius: 0.25rem;
+  padding: 0.188rem;
+  color:  rgb(59, 184, 169);
+  font-weight: bold;
+  cursor: pointer;
+}
+
+span#html {
+  font-size: 16px;
+  margin-left: 10px;
+  background-color: rgb(231, 227, 227);
+  border-radius: 4px;
+  padding: 3px;
+  color:  rgb(59, 184, 169);
+  font-weight: bold;
+  cursor: pointer;
+}
+
+span#css {
+  font-size: 16px;
+  margin-left: 10px;
+  background-color: rgb(231, 227, 227);
+  border-radius: 4px;
+  padding: 3px;
+  color:  rgb(59, 184, 169);
+  font-weight: bold;
+  cursor: pointer;
+}
+
+span#javascript {
+  font-size: 16px;
+  margin-left: 4px;
+  background-color: rgb(231, 227, 227);
+  border-radius: 39px;
+  padding: 3px;
+  color:  rgb(59, 184, 169);
+  font-weight: bold;
+  cursor: pointer;
 }

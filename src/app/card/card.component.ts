@@ -18,4 +18,25 @@ export class CardComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  onClickFlagNew() {
+    console.log("Flag New");
+  }
+  onClickFlagFeatured() {
+    console.log("Flag Featured");
+  }
+  onClickFrontend() {
+    console.log("Frontend");
+  }
+  onClickSenior() {
+    console.log("Senior");
+  }
+  onClickHtml() {
+    console.log("Html");
+  }
+  onClickCss() {
+    console.log("Css");
+  }
+  onClickJavascript() {
+    console.log("Javascript");
+  }
 }

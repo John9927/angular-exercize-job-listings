@@ -1,10 +1,16 @@
+*, *::after, *::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 html {
   background-color: rgb(225, 248, 240);
 }
 
 .card {
   background-color: white;
-  width: 85%;
+  width: 86%;
   margin: auto;
   display: flex;
   margin-top: 1.5rem;
@@ -19,3 +25,5 @@ html {
   margin-top: 1rem;
   margin-left: 2rem;
 }
+
+

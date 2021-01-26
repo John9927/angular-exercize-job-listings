@@ -1,0 +1,29 @@
+
+{
+  "data" : [
+    {
+    "id":0,
+    "img":"assets/logo.png",
+    "tech":["Photosnap","Manage","Account","MyHome","Aesys"] ,
+    "listingFlags": {
+      "new": true,
+      "featured": true
+    },
+
+    "description":{
+      "features":"Junior Frontend Developer",
+      "data":"2018/12/27 10:00:00",
+      "contract":"Part-Time",
+      "location":"Remote"
+    },
+
+    "tags":[
+      "Frontend",
+      "Junior",
+      "Html",
+      "Css",
+      "Javascript"
+    ]
+  }
+  ]
+}
