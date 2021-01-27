@@ -1,7 +1,7 @@
-@import '../../styles.scss';
+@import '../../assets/store/index.scss';
 
 div.card:last-child {
-  margin-bottom: 2rem;
+  margin-bottom: $size200;
 }
 
 ul {
@@ -16,7 +16,7 @@ li:first-child {
 }
 
 li:last-child {
-  margin-left: 1.25rem;
+  margin-left: $size125;
 }
 
 li {
@@ -28,29 +28,29 @@ li {
 }
 
 span#title {
-  font-size: 1rem;
+  font-size: $size100;
   padding-top: 1px;
   color: $color-title;
   font-weight: bold;
 }
 
 h4#description {
-  margin-top: 0.256rem;
-  font-size: 1.063rem;
-  letter-spacing: 1px;
+  margin-top: $size0256;
+  font-size: $size01063;
+  letter-spacing: $size1px;
   word-break: break-word;
 }
 
 ul#list {
-  margin-top: 0.256rem;
+  margin-top: $size0256;
 }
 
 span#flag__new {
   font-size: 0.700rem;
   margin-left: 0.938rem;
   background-color: $color-heavenly;
-  border-radius: 0.75rem;
-  padding: 0.288rem;
+  border-radius: $size75;
+  padding: $size0288;
   color: white;
   font-weight: bold;
   cursor: pointer;
@@ -62,7 +62,7 @@ span#flag__featured {
   margin-left: 0.625rem;
   background-color: $color-grey;
   border-radius: 0.75rem;
-  padding: 0.288rem;
+  padding: $size0288;
   color: white;
   font-weight: bold;
   cursor: pointer;
@@ -76,7 +76,7 @@ h4 {
 /* FLAG  */
 .flag {
   position: absolute;
-  right: 2rem;
+  right: $size200;
   padding: 1.35rem;
   padding-right: 0rem;
 }

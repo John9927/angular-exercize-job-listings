@@ -5,7 +5,8 @@
     "id":0,
     "img":"assets/logo.png",
     "tech":["Photosnap","Manage","Account","MyHome","Aesys"] ,
-    "listingFlags": {
+
+    "flags": {
       "new": true,
       "featured": true
     },

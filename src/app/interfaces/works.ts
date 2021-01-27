@@ -1,4 +1,4 @@
-  export interface ListingFlags {
+  export interface Flags {
       new: boolean;
       featured: boolean;
   }
@@ -14,13 +14,12 @@
     id: number;
     img: string;
     tech: string[];
-    listingFlags: ListingFlags;
+    flags: Flags;
     description: Description;
     tags: string[];
   }
 
   export interface Work {
-    data: Datum[];
   }
 
 
