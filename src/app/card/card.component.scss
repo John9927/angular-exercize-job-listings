@@ -5,6 +5,7 @@ div.card:last-child {
 }
 
 ul {
+  font-size: 13px;
   display: flex;
   flex-direction: row;
   margin: 0;
@@ -28,7 +29,7 @@ li {
 }
 
 span#title {
-  font-size: $size100;
+  font-size: 14px;
   padding-top: 1px;
   color: $color-title;
   font-weight: bold;
@@ -36,7 +37,7 @@ span#title {
 
 h4#description {
   margin-top: $size0256;
-  font-size: $size01063;
+  font-size: 14px;
   letter-spacing: $size1px;
   word-break: break-word;
 }
@@ -46,7 +47,7 @@ ul#list {
 }
 
 span#flag__new {
-  font-size: 0.700rem;
+  font-size: 9px;
   margin-left: 0.938rem;
   background-color: $color-heavenly;
   border-radius: $size75;
@@ -58,7 +59,7 @@ span#flag__new {
 }
 
 span#flag__featured {
-  font-size: 0.700rem;
+  font-size: 9px;
   margin-left: 0.625rem;
   background-color: $color-grey;
   border-radius: $size75;
@@ -82,17 +83,18 @@ h4 {
 }
 
 span#frontend {
-  font-size: 1rem;
+  font-size: 14px;
   background-color: $color-tags-background;
   border-radius: 0.25rem;
   padding: 0.188rem;
   color: $color-tags;
   font-weight: bold;
   cursor: pointer;
+  margin-bottom: 1rem;
 }
 
 span#senior {
-  font-size: 1rem;
+  font-size: 14px;
   margin-left: 0.625rem;
   background-color: $color-tags-background;
   border-radius: 0.25rem;
@@ -100,10 +102,11 @@ span#senior {
   color: $color-tags;
   font-weight: bold;
   cursor: pointer;
+  margin-bottom: 1rem;
 }
 
 span#html {
-  font-size: 16px;
+  font-size: 14px;
   margin-left: 10px;
   background-color: $color-tags-background;
   border-radius: 4px;
@@ -111,10 +114,11 @@ span#html {
   color: $color-tags;
   font-weight: bold;
   cursor: pointer;
+  margin-bottom: 1rem;
 }
 
 span#css {
-  font-size: 16px;
+  font-size: 14px;
   margin-left: 10px;
   background-color: $color-tags-background;
   border-radius: 4px;
@@ -122,10 +126,11 @@ span#css {
   color: $color-tags;
   font-weight: bold;
   cursor: pointer;
+  margin-bottom: 1rem;
 }
 
 span#javascript {
-  font-size: 16px;
+  font-size: 14px;
   margin-left: 4px;
   background-color: $color-tags-background;
   border-radius: 39px;
@@ -133,6 +138,7 @@ span#javascript {
   color: $color-tags;
   font-weight: bold;
   cursor: pointer;
+  margin-bottom: 1rem;
 }
 
 
@@ -166,6 +172,7 @@ span#javascript {
     flex-wrap: wrap;
     margin-left: $size200;
     word-wrap: break-word;
+    padding-bottom: 0rem;
   }
 
   .title__card {
