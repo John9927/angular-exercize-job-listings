@@ -1,3 +1,4 @@
+@import '../../styles.scss';
 
 ul {
   display: flex;
@@ -15,7 +16,7 @@ li:last-child {
 }
 
 li {
-  color: grey;
+  color: $color-grey;
 }
 
 .divider {
@@ -25,7 +26,7 @@ li {
 span#title {
   font-size: 1rem;
   padding-top: 1px;
-  color:rgb(99, 212, 199);
+  color: $color-title;
   font-weight: bold;
 }
 
@@ -42,7 +43,7 @@ ul#list {
 span#flag__new {
   font-size: 0.700rem;
   margin-left: 0.938rem;
-  background-color: rgb(59, 184, 169);
+  background-color: $color-heavenly;
   border-radius: 0.75rem;
   padding: 0.288rem;
   color: white;
@@ -53,7 +54,7 @@ span#flag__new {
 span#flag__featured {
   font-size: 0.700rem;
   margin-left: 0.625rem;
-  background-color: rgb(88, 88, 88);
+  background-color: $color-grey;
   border-radius: 0.75rem;
   padding: 0.288rem;
   color: white;
@@ -76,10 +77,10 @@ h4 {
 span#frontend {
   font-size: 1rem;
   margin-left: 0.625rem;
-  background-color: rgb(231, 227, 227);
+  background-color: $color-tags-background;
   border-radius: 0.25rem;
   padding: 0.188rem;
-  color:  rgb(59, 184, 169);
+  color: $color-tags;
   font-weight: bold;
   cursor: pointer;
 }
@@ -87,10 +88,10 @@ span#frontend {
 span#senior {
   font-size: 1rem;
   margin-left: 0.625rem;
-  background-color: rgb(231, 227, 227);
+  background-color: $color-tags-background;
   border-radius: 0.25rem;
   padding: 0.188rem;
-  color:  rgb(59, 184, 169);
+  color: $color-tags;
   font-weight: bold;
   cursor: pointer;
 }
@@ -98,10 +99,10 @@ span#senior {
 span#html {
   font-size: 16px;
   margin-left: 10px;
-  background-color: rgb(231, 227, 227);
+  background-color: $color-tags-background;
   border-radius: 4px;
   padding: 3px;
-  color:  rgb(59, 184, 169);
+  color: $color-tags;
   font-weight: bold;
   cursor: pointer;
 }
@@ -109,10 +110,10 @@ span#html {
 span#css {
   font-size: 16px;
   margin-left: 10px;
-  background-color: rgb(231, 227, 227);
+  background-color: $color-tags-background;
   border-radius: 4px;
   padding: 3px;
-  color:  rgb(59, 184, 169);
+  color: $color-tags;
   font-weight: bold;
   cursor: pointer;
 }
@@ -120,10 +121,10 @@ span#css {
 span#javascript {
   font-size: 16px;
   margin-left: 4px;
-  background-color: rgb(231, 227, 227);
+  background-color: $color-tags-background;
   border-radius: 39px;
   padding: 3px;
-  color:  rgb(59, 184, 169);
+  color: $color-tags;
   font-weight: bold;
   cursor: pointer;
 }
@@ -149,6 +150,6 @@ span#javascript {
   right: 1.875rem;
   word-break: break-word;
   left: 0px;
-   padding-left: 0px;
+  padding-left: 0px;
 }
 }
