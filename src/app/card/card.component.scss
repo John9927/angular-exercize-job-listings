@@ -38,6 +38,7 @@ h4#description {
   margin-top: 0.256rem;
   font-size: 1.063rem;
   letter-spacing: 1px;
+  word-break: break-word;
 }
 
 ul#list {
@@ -53,6 +54,7 @@ span#flag__new {
   color: white;
   font-weight: bold;
   cursor: pointer;
+  word-break: break-word;
 }
 
 span#flag__featured {
@@ -64,6 +66,7 @@ span#flag__featured {
   color: white;
   font-weight: bold;
   cursor: pointer;
+  word-break: normal;
 }
 
 h4 {
@@ -80,7 +83,6 @@ h4 {
 
 span#frontend {
   font-size: 1rem;
-  // margin-left: 0.625rem;
   background-color: $color-tags-background;
   border-radius: 0.25rem;
   padding: 0.188rem;
@@ -143,7 +145,6 @@ span#javascript {
 }
 .flag {
   position: absolute;
-  word-break: break-word;
   padding-left: 0px;
 }
 .title__card {
@@ -161,7 +162,7 @@ span#javascript {
 
   .flag {
     position: relative;
-    word-break: break-word;
+    word-wrap: break-word;
     margin-left: 2rem;
   }
 
