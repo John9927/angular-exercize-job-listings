@@ -1,5 +1,9 @@
 @import '../../styles.scss';
 
+div.card:last-child {
+  margin-bottom: 2rem;
+}
+
 ul {
   display: flex;
   flex-direction: row;
@@ -69,14 +73,14 @@ h4 {
 /* FLAG  */
 .flag {
   position: absolute;
-  right: 4rem;
+  right: 2rem;
   padding: 1.35rem;
   padding-right: 0rem;
 }
 
 span#frontend {
   font-size: 1rem;
-  margin-left: 0.625rem;
+  // margin-left: 0.625rem;
   background-color: $color-tags-background;
   border-radius: 0.25rem;
   padding: 0.188rem;
@@ -130,15 +134,7 @@ span#javascript {
 }
 
 
-@media only screen and (max-width: 785px) {
-.divider {
-  display: flex;
-  position: absolute;
-  margin-top: 10px;
-  width: 88%;
-}
 
-}
 @media only screen and (max-width: 935px) {
  img {
   position: absolute;
@@ -146,10 +142,30 @@ span#javascript {
   top: -24px;
 }
 .flag {
-  position: relative;
-  right: 1.875rem;
+  position: absolute;
   word-break: break-word;
-  left: 0px;
   padding-left: 0px;
 }
+.title__card {
+  margin-left: -1rem;
 }
+}
+
+@media only screen and (max-width: 785px) {
+  .divider {
+    display: flex;
+    position: absolute;
+    margin-top: 10px;
+    width: 88%;
+  }
+
+  .flag {
+    position: relative;
+    word-break: break-word;
+    margin-left: 2rem;
+  }
+
+  .title__card {
+    margin-left: 0rem;
+  }
+  }

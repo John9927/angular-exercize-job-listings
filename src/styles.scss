@@ -32,6 +32,7 @@ html {
 }
 
 .content__card {
+  width: 100%;
   display: flex;
   flex-direction: row;
   margin-top: 1rem;
@@ -44,8 +45,7 @@ html {
     background-color: white;
     width: 90%;
     margin: 0 auto;
-    /* display: flex; */
-    margin-top: 1.5rem;
+    margin-top: 2rem;
     padding: 1rem;
     border-radius: 0.438rem;
     box-shadow: 3px 3px 12px rgba(0,0,0,0.2);
@@ -57,6 +57,7 @@ html {
     margin: 0px;
     border-top-width: 10px;
     padding-top: 16px;
+    width: 100%;
   }
 }
 
