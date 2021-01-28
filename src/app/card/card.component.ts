@@ -8,10 +8,6 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CardComponent implements OnInit {
 
-  day = "1d ago";
-  time = "full time";
-  region = "USA only";
-
   public work: any;
 
   constructor(private dataService: DataService) { }

@@ -13,7 +13,7 @@ export class DataService {
   constructor(private http: HttpClient) { }
 
   getData(): Observable<Work[]> {
-  return  this.http.get<Work[]>(url);
+  return this.http.get<Work[]>(url);
   }
 
 }

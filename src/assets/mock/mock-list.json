@@ -13,8 +13,9 @@
 
     "description":{
       "features":"Junior Frontend Developer",
-      "contract":"Part-Time",
-      "location":"Remote"
+      "day":["1 day ago", "1 week ago", "1 month ago"],
+      "contract":["Full-Time", "Part-Time"],
+      "location":["USA Only", "Remote"]
     },
 
     "tags":[
