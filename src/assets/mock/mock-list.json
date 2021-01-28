@@ -3,7 +3,7 @@
   "data" : [
     {
     "id":0,
-    "img":"assets/logo.png",
+    "img":"assets/logo/account.svg",
     "tech":["Photosnap","Manage","Account","MyHome","Aesys"] ,
 
     "flags": {

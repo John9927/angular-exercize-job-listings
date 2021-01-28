@@ -1,3 +1,4 @@
+import { DataService } from './../data.service';
 import { Work } from './../interfaces/works';
 import { Component, OnInit } from '@angular/core';
 @Component({
@@ -7,36 +8,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CardComponent implements OnInit {
 
-  title = "Photosnap";
-  description = "Senior Frontend Developer";
   day = "1d ago";
-  time = "Full Time";
-  region = "USA Only";
+  time = "full time";
+  region = "USA only";
 
-  constructor() { }
+  public work: any;
+
+  constructor(private dataService: DataService) { }
 
   ngOnInit(): void {
+    this.getData();
   }
 
-  onClickFlagNew() {
-    console.log("Flag New");
-  }
-  onClickFlagFeatured() {
-    console.log("Flag Featured");
-  }
-  onClickFrontend() {
-    console.log("Frontend");
-  }
-  onClickSenior() {
-    console.log("Senior");
-  }
-  onClickHtml() {
-    console.log("Html");
-  }
-  onClickCss() {
-    console.log("Css");
-  }
-  onClickJavascript() {
-    console.log("Javascript");
+  getData() {
+    this.dataService.getData().subscribe(data => this.work = data);
   }
 }
