@@ -3,7 +3,157 @@
   "data" : [
     {
     "id":0,
+    "img":"assets/logo/photosnap.svg",
+    "tech":"Photosnap",
+
+    "flags": {
+      "new": true,
+      "featured": true
+    },
+
+    "description":{
+      "features":"Junior Frontend Developer",
+      "day":["1 day ago", "1 week ago", "1 month ago"],
+      "contract":["Full-Time", "Part-Time"],
+      "location":["USA Only", "Remote"]
+    },
+
+    "tags":[
+      "Frontend",
+      "Junior",
+      "Html",
+      "Css",
+      "JavaScript"
+    ]
+  },
+  {
+    "id":1,
+    "img":"assets/logo/manage.svg",
+    "tech":"Manage",
+
+    "flags": {
+      "new": true,
+      "featured": true
+    },
+
+    "description":{
+      "features":"Junior Frontend Developer",
+      "day":["1 day ago", "1 week ago", "1 month ago"],
+      "contract":["Full-Time", "Part-Time"],
+      "location":["USA Only", "Remote"]
+    },
+
+    "tags":[
+      "Frontend",
+      "Junior",
+      "Html",
+      "Css",
+      "JavaScript"
+    ]
+  },
+  {
+    "id":2,
     "img":"assets/logo/account.svg",
+    "tech":"Account",
+
+    "flags": {
+      "new": true,
+      "featured": true
+    },
+
+    "description":{
+      "features":"Junior Frontend Developer",
+      "day":["1 day ago", "1 week ago", "1 month ago"],
+      "contract":["Full-Time", "Part-Time"],
+      "location":["USA Only", "Remote"]
+    },
+
+    "tags":[
+      "Frontend",
+      "Junior",
+      "Html",
+      "Css",
+      "JavaScript"
+    ]
+  },
+  {
+    "id":3,
+    "img":"assets/logo/manage.svg",
+    "tech":"MyHome",
+
+    "flags": {
+      "new": true,
+      "featured": true
+    },
+
+    "description":{
+      "features":"Junior Frontend Developer",
+      "day":["1 day ago", "1 week ago", "1 month ago"],
+      "contract":["Full-Time", "Part-Time"],
+      "location":["USA Only", "Remote"]
+    },
+
+    "tags":[
+      "Frontend",
+      "Junior",
+      "Html",
+      "Css",
+      "JavaScript"
+    ]
+  },
+  {
+    "id":4,
+    "img":"assets/logo/manage.svg",
+    "tech":"Aesys",
+
+    "flags": {
+      "new": true,
+      "featured": true
+    },
+
+    "description":{
+      "features":"Junior Frontend Developer",
+      "day":["1 day ago", "1 week ago", "1 month ago"],
+      "contract":["Full-Time", "Part-Time"],
+      "location":["USA Only", "Remote"]
+    },
+
+    "tags":[
+      "Frontend",
+      "Junior",
+      "Html",
+      "Css",
+      "JavaScript"
+    ]
+  },
+  {
+    "id":5,
+    "img":"assets/logo/manage.svg",
+    "tech":["Photosnap","Manage","Account","MyHome","Aesys"] ,
+
+    "flags": {
+      "new": true,
+      "featured": true
+    },
+
+    "description":{
+      "features":"Junior Frontend Developer",
+      "day":["1 day ago", "1 week ago", "1 month ago"],
+      "contract":["Full-Time", "Part-Time"],
+      "location":["USA Only", "Remote"]
+    },
+
+    "tags":[
+      "Frontend",
+      "Junior",
+      "Html",
+      "Css",
+      "JavaScript"
+    ]
+  },
+  {
+    "id":6,
+    "img":"assets/logo/manage.svg",
     "tech":["Photosnap","Manage","Account","MyHome","Aesys"] ,
 
     "flags": {

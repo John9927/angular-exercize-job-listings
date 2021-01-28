@@ -72,9 +72,19 @@ h4 {
   margin: 0;
 }
 
+
+.container {
+  border: 1px solid red;
+  width: 50%;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
 /* FLAG  */
 .flag {
-  position: absolute;
+  display: flex;
+  flex-direction: row;
   right: $size200;
   padding: 1.35rem;
   padding-right: 0rem;

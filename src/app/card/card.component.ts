@@ -1,5 +1,5 @@
 import { DataService } from './../data.service';
-import { Work } from './../interfaces/works';
+import { Works } from './../interfaces/works';
 import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-card',

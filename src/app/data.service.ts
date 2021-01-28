@@ -1,4 +1,4 @@
-import { Work } from './interfaces/works';
+import { Works } from './interfaces/works';
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http'
 import { Observable } from 'rxjs';
@@ -12,8 +12,8 @@ export class DataService {
 
   constructor(private http: HttpClient) { }
 
-  getData(): Observable<Work[]> {
-  return this.http.get<Work[]>(url);
+  getData(): Observable<Works[]> {
+  return this.http.get<Works[]>(url);
   }
 
 }

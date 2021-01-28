@@ -1,29 +1,24 @@
-<ng-container *ngFor="let w of work">
-  <div class="card">
-    <img [src]="w.img">
-    <div class="content__card">
-      <div class="title__card">
+<div class="card" *ngFor="let w of work">
+  <img [src]="w.img">
+  <div class="content__card">
+    <div class="title__card">
 
-        <span id=title>{{w.tech[0]}}</span>
-        <span id="flag__new" *ngIf="w.flags.new">NEW!</span>
-        <span id="flag__featured" *ngIf="w.flags.featured">FEATURED!</span>
-        <h4 id=description>{{w.description.features}}</h4>
+      <span id=title>{{w.tech}}</span>
+      <span id="flag__new" *ngIf="w.flags.new">NEW!</span>
+      <span id="flag__featured" *ngIf="w.flags.featured">FEATURED!</span>
+      <h4 id=description>{{w.description.features}}</h4>
 
-        <ul id=list>
-          <li>{{w.description.day[0]}}</li>
-          <li style="margin-left: 20px;">{{w.description.contract[0]}}</li>
-          <li>{{w.description.location[0]}}</li>
-        </ul>
-        <hr class="divider">
-      </div>
-
-      <div class="flag" *ngFor="let wo of work">
-        <span id="frontend">{{wo.tags[0]}}</span>
-        <span id="senior">{{wo.tags[1]}}</span>
-        <span id="senior">{{wo.tags[2]}}</span>
-        <span id="senior">{{wo.tags[3]}}</span>
-        <span id="senior">{{wo.tags[4]}}</span>
+      <ul id=list>
+        <li>{{w.description.day[0]}}</li>
+        <li style="margin-left: 20px;">{{w.description.contract[0]}}</li>
+        <li>{{w.description.location[0]}}</li>
+      </ul>
+      <hr class="divider">
+    </div>
+    <div class="container">
+      <div class="flag" *ngFor="let tag of w.tags">
+        <span>{{tag}}</span>
       </div>
     </div>
   </div>
-</ng-container>
+</div>
