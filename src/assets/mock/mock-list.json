@@ -80,7 +80,7 @@
     "tech":"MyHome",
 
     "flags": {
-      "new": true
+
     },
 
     "description":{
@@ -103,7 +103,6 @@
     "tech":"Loop Studios",
 
     "flags": {
-      "new": true
     },
 
     "description":{
@@ -127,7 +126,6 @@
     "tech":"FaceIt" ,
 
     "flags": {
-      "new": true
     },
 
     "description":{
@@ -150,7 +148,6 @@
     "tech":"Shortly",
 
     "flags": {
-      "new": true
     },
 
     "description":{
@@ -174,7 +171,6 @@
     "tech":"Insure",
 
     "flags": {
-      "new": true
     },
 
     "description":{
@@ -198,7 +194,6 @@
     "tech":"Eyecam Co.",
 
     "flags": {
-      "new": true
     },
 
     "description":{
@@ -222,7 +217,6 @@
     "tech":"The Air Filter Company",
 
     "flags": {
-      "new": true
     },
 
     "description":{
