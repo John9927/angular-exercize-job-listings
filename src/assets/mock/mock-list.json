@@ -12,15 +12,15 @@
     },
 
     "description":{
-      "features":"Junior Frontend Developer",
-      "day":["1 day ago", "1 week ago", "1 month ago"],
-      "contract":["Full-Time", "Part-Time"],
-      "location":["USA Only", "Remote"]
+      "features":"Senior Frontend Developer",
+      "day":"1d ago",
+      "contract":"Full-Time",
+      "location":"USA Only"
     },
 
     "tags":[
       "Frontend",
-      "Junior",
+      "Senior",
       "Html",
       "Css",
       "JavaScript"
@@ -37,18 +37,17 @@
     },
 
     "description":{
-      "features":"Junior Frontend Developer",
-      "day":["1 day ago", "1 week ago", "1 month ago"],
-      "contract":["Full-Time", "Part-Time"],
-      "location":["USA Only", "Remote"]
+      "features":"Fullstack Developer",
+      "day":"1d ago",
+      "contract": "Part-Time",
+      "location":"Remote"
     },
 
     "tags":[
-      "Frontend",
-      "Junior",
-      "Html",
-      "Css",
-      "JavaScript"
+      "Fullstack",
+      "Midweight",
+      "Python",
+      "React"
     ]
   },
   {
@@ -57,122 +56,187 @@
     "tech":"Account",
 
     "flags": {
-      "new": true,
-      "featured": true
+      "new": true
     },
 
     "description":{
       "features":"Junior Frontend Developer",
-      "day":["1 day ago", "1 week ago", "1 month ago"],
-      "contract":["Full-Time", "Part-Time"],
-      "location":["USA Only", "Remote"]
+      "day":"2d ago",
+      "contract": "Part-Time",
+      "location":"USA Only"
     },
 
     "tags":[
       "Frontend",
       "Junior",
-      "Html",
-      "Css",
+      "React",
+      "Sass",
       "JavaScript"
     ]
   },
   {
     "id":3,
-    "img":"assets/logo/manage.svg",
+    "img":"assets/logo/myhome.svg",
     "tech":"MyHome",
 
     "flags": {
-      "new": true,
-      "featured": true
+      "new": true
     },
 
     "description":{
       "features":"Junior Frontend Developer",
-      "day":["1 day ago", "1 week ago", "1 month ago"],
-      "contract":["Full-Time", "Part-Time"],
-      "location":["USA Only", "Remote"]
+      "day":"5d ago",
+      "contract":"Contract",
+      "location":"USA Only"
     },
 
     "tags":[
       "Frontend",
       "Junior",
-      "Html",
       "Css",
       "JavaScript"
     ]
   },
   {
     "id":4,
-    "img":"assets/logo/manage.svg",
-    "tech":"Aesys",
+    "img":"assets/logo/loop-studios.svg",
+    "tech":"Loop Studios",
 
     "flags": {
-      "new": true,
-      "featured": true
+      "new": true
     },
 
     "description":{
-      "features":"Junior Frontend Developer",
-      "day":["1 day ago", "1 week ago", "1 month ago"],
-      "contract":["Full-Time", "Part-Time"],
-      "location":["USA Only", "Remote"]
+      "features":"Software Engineer",
+      "day":"1w ago",
+      "contract":"Full-Time",
+      "location":"Worldwide"
     },
 
     "tags":[
-      "Frontend",
-      "Junior",
-      "Html",
-      "Css",
-      "JavaScript"
+      "Fullstack",
+      "Midweight",
+      "Javascript",
+      "Sass",
+      "Ruby"
     ]
   },
   {
     "id":5,
-    "img":"assets/logo/manage.svg",
-    "tech":["Photosnap","Manage","Account","MyHome","Aesys"] ,
+    "img":"assets/logo/faceit.svg",
+    "tech":"FaceIt" ,
 
     "flags": {
-      "new": true,
-      "featured": true
+      "new": true
     },
 
     "description":{
-      "features":"Junior Frontend Developer",
-      "day":["1 day ago", "1 week ago", "1 month ago"],
-      "contract":["Full-Time", "Part-Time"],
-      "location":["USA Only", "Remote"]
+      "features":"Junior Backend Developer",
+      "day":"2w ago",
+      "contract":"Full-Time",
+      "location":"UK only"
     },
 
     "tags":[
-      "Frontend",
+      "Backend",
       "Junior",
-      "Html",
-      "Css",
-      "JavaScript"
+      "Ruby",
+      "RoR"
     ]
   },
   {
     "id":6,
-    "img":"assets/logo/manage.svg",
-    "tech":["Photosnap","Manage","Account","MyHome","Aesys"] ,
+    "img":"assets/logo/shortly.svg",
+    "tech":"Shortly",
 
     "flags": {
-      "new": true,
-      "featured": true
+      "new": true
     },
 
     "description":{
-      "features":"Junior Frontend Developer",
-      "day":["1 day ago", "1 week ago", "1 month ago"],
-      "contract":["Full-Time", "Part-Time"],
-      "location":["USA Only", "Remote"]
+      "features":"Junior Developer",
+      "day":"2w ago",
+      "contract":"Full-Time",
+      "location":"Worldwide"
     },
 
     "tags":[
       "Frontend",
       "Junior",
       "Html",
-      "Css",
+      "Sass",
+      "JavaScript"
+    ]
+  },
+  {
+    "id":7,
+    "img":"assets/logo/insure.svg",
+    "tech":"Insure",
+
+    "flags": {
+      "new": true
+    },
+
+    "description":{
+      "features":"Junior Frontend Developer",
+      "day":"2w ago",
+      "contract":"Full-Time",
+      "location":"USA only"
+    },
+
+    "tags":[
+      "Frontend",
+      "Junior",
+      "Vue",
+      "JavaScript",
+      "Sass"
+    ]
+  },
+  {
+    "id":8,
+    "img":"assets/logo/eyecam-co.svg",
+    "tech":"Eyecam Co.",
+
+    "flags": {
+      "new": true
+    },
+
+    "description":{
+      "features":"Full Stack Engineer",
+      "day":"3w ago",
+      "contract":"Full-Time",
+      "location":"Worldwide"
+    },
+
+    "tags":[
+      "Fullstack",
+      "Midweight",
+      "JavaScript",
+      "Django",
+      "Python"
+    ]
+  },
+  {
+    "id":9,
+    "img":"assets/logo/the-air-filter-company.svg",
+    "tech":"The Air Filter Company",
+
+    "flags": {
+      "new": true
+    },
+
+    "description":{
+      "features":"Front-end Dev",
+      "day":"1mo ago",
+      "contract":"Part Time",
+      "location":"Worldwide"
+    },
+
+    "tags":[
+      "Frontend",
+      "Junior",
+      "React",
+      "Sass",
       "JavaScript"
     ]
   }
