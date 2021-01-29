@@ -18,9 +18,6 @@ export class CardComponent implements OnInit {
     this.dataService.getData().subscribe(data => this.work = data);
   }
 
-  onClickDescription() {
-    console.log("TODO: Open Description");
-  }
 
   onClickTags() {
     console.log("TODO: Open Filters");

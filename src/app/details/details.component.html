@@ -1,0 +1,32 @@
+<app-header></app-header>
+
+<div>
+  <h1>Dettaglio</h1>
+</div>
+<a routerLink="/home">Home</a>
+
+<div class="card">
+  <img [src]="works?.img">
+  <div class="content__card">
+    <div class="title__card">
+      <!-- TITLE -->
+      <span id=title>{{works?.tech}}</span>
+      <!-- Description -->
+      <h4 id="description">{{works?.description?.features}}</h4>
+      <!-- LIST -->
+      <ul id=list>
+        <li>{{works?.description?.day}}</li>
+        <li style="margin-left: 20px;">{{works?.description?.contract}}</li>
+        <li>{{works?.description?.location}}</li>
+      </ul>
+      <hr class="divider">
+    </div>
+    <!-- Flags -->
+    <div class="container">
+      <div class="flag" *ngFor="let tag of works?.tags">
+        <span id="tags">{{tag}}</span>
+      </div>
+    </div>
+  </div>
+</div>
+

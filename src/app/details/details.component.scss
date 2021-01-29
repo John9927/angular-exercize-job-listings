@@ -1,0 +1,193 @@
+@import "../../assets/store/index.scss";
+
+
+h1 {
+  display: flex;
+  justify-content: center;
+}
+
+div.card:last-child {
+  margin-bottom: $size200;
+}
+
+ul {
+  font-size: 13px;
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  padding-left: 0px;
+}
+
+li:first-child {
+  list-style: none;
+}
+
+li:last-child {
+  margin-left: $size125;
+}
+
+li {
+  color: $color-grey;
+}
+
+.divider {
+  display: none;
+}
+
+span#title {
+  font-size: 14px;
+  padding-top: 1px;
+  color: $color-title;
+  font-weight: bold;
+}
+
+h4#description {
+  margin-top: $size0256;
+  font-size: 14px;
+  letter-spacing: $size1px;
+  word-break: break-word;
+  cursor: pointer;
+}
+
+ul#list {
+  margin-top: $size0256;
+}
+
+span#flag__new {
+  font-size: 9px;
+  margin-left: 0.938rem;
+  background-color: $color-heavenly;
+  border-radius: $size75;
+  padding: $size0288;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+span#flag__featured {
+  font-size: 9px;
+  margin-left: 0.625rem;
+  background-color: $color-grey;
+  border-radius: $size75;
+  padding: $size0288;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+h4 {
+  margin: 0;
+}
+
+.container {
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin-left: auto;
+  margin-top: 5px;
+}
+/* FLAG  */
+.flag {
+  right: 2rem;
+  padding: 1rem;
+  padding-right: 0rem;
+}
+
+span#tags {
+  font-size: 14px;
+  margin-right: 0.625rem;
+  background-color: $color-tags-background;
+  border-radius: 0.25rem;
+  padding: 0.188rem;
+  color: $color-tags;
+  font-weight: bold;
+  cursor: pointer;
+  margin-bottom: 1rem;
+}
+
+span#tags:hover {
+  background-color: $color-heavenly;
+  color: white;
+}
+
+@media only screen and (max-width: 935px) {
+  img {
+    position: absolute;
+    height: 50px;
+    top: -24px;
+  }
+  span#tags {
+    font-size: 13px;
+    background-color: $color-tags-background;
+    border-radius: 0.25rem;
+    padding: 0.188rem;
+    color: $color-tags;
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 1rem;
+  }
+
+  .container {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-left: auto;
+    margin-top: 0.3em;
+  }
+  .flag {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 0rem;
+    justify-content: flex-start;
+  }
+  .title__card {
+    margin-left: -1rem;
+  }
+}
+
+@media only screen and (max-width: 785px) {
+  .divider {
+    display: flex;
+    position: absolute;
+    margin-top: $size0625;
+    width: 88%;
+  }
+  span#tags {
+    font-size: 12px;
+    background-color: $color-tags-background;
+    color: $color-tags;
+    border-radius: 0.25rem;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  .container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    padding-top: 1.5rem;
+    padding-left: 2.2rem;
+    padding-bottom: 0%;
+  }
+
+  .flag {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding: 0%;
+  }
+
+  .title__card {
+    margin-left: 0rem;
+  }
+}
+
+
+
+
+

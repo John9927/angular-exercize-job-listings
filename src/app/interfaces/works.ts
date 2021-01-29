@@ -5,6 +5,7 @@ export interface ListingFlags {​​​​​
 export interface Description {​​​​​
   features: string;
   data: string;
+  day: number;
   contract: string;
   location: string;
 }​​​​​

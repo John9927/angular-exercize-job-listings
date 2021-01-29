@@ -16,4 +16,8 @@ export class DataService {
   return this.http.get<Works[]>(url);
   }
 
+  getDetail(id: number): Observable<Works>{
+    return this.http.get<Works>(`${url}/${id}`);
+  }
+
 }

@@ -1,5 +1,8 @@
+<!-- Header -->
+<app-header></app-header>
 <!-- Filters -->
 <app-filters></app-filters>
+<!-- Card -->
 <div class="card" *ngFor="let w of work">
   <img [src]="w.img">
   <div class="content__card">
@@ -10,7 +13,7 @@
       <span id="flag__new" *ngIf="w.flags.new">NEW!</span>
       <span id="flag__featured" *ngIf="w.flags.featured">FEATURED!</span>
       <!-- Description -->
-      <h4 id="description" (click)="onClickDescription()">{{w.description.features}}</h4>
+      <h4 id="description" routerLink="/detail/{{w.id}}">{{w.description.features}}</h4>
       <!-- LIST -->
       <ul id=list>
         <li>{{w.description.day}}</li>
