@@ -1,4 +1,8 @@
-*, *::after, *::before {
+@import "./assets/store/index.scss";
+
+*,
+*::after,
+*::before {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -18,7 +22,7 @@ html {
   margin-top: 1.5rem;
   padding: 1rem;
   border-radius: 0.438rem;
-  box-shadow: 3px 3px 12px rgba(0,0,0,0.2);
+  box-shadow: 3px 3px 12px rgba(0, 0, 0, 0.2);
   border-left: 7px #42a797 solid;
 }
 
@@ -26,7 +30,7 @@ html {
   width: 100%;
   display: flex;
   flex-direction: row;
-  margin-top: 1rem;
+  margin-top: 0.9rem;
   margin-left: 2rem;
 }
 
@@ -39,7 +43,7 @@ html {
     margin-top: 2rem;
     padding: 1rem;
     border-radius: 0.438rem;
-    box-shadow: 3px 3px 12px rgba(0,0,0,0.2);
+    box-shadow: 3px 3px 12px rgba(0, 0, 0, 0.2);
     border-left: 7px #42a797 solid;
   }
   .content__card {
@@ -52,4 +56,24 @@ html {
   }
 }
 
+//SCROLLBAR CUSTOM
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
 
+/* Track */
+::-webkit-scrollbar-track {
+  background: rgb(225, 248, 240);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: $color-heavenly;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #42a797;
+}

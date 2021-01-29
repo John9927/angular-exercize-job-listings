@@ -1,5 +1,4 @@
 import { DataService } from './../data.service';
-import { Works } from './../interfaces/works';
 import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-card',
@@ -9,7 +8,6 @@ import { Component, OnInit } from '@angular/core';
 export class CardComponent implements OnInit {
 
   public work: any;
-
   constructor(private dataService: DataService) { }
 
   ngOnInit(): void {
@@ -18,5 +16,13 @@ export class CardComponent implements OnInit {
 
   getData() {
     this.dataService.getData().subscribe(data => this.work = data);
+  }
+
+  onClickDescription() {
+    console.log("TODO: Open Description");
+  }
+
+  onClickTags() {
+    console.log("TODO: Open Filters");
   }
 }

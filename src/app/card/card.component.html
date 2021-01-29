@@ -1,13 +1,17 @@
+<!-- Filters -->
+<app-filters></app-filters>
 <div class="card" *ngFor="let w of work">
   <img [src]="w.img">
   <div class="content__card">
     <div class="title__card">
-
+      <!-- TITLE -->
       <span id=title>{{w.tech}}</span>
+      <!-- Flags New & Featured -->
       <span id="flag__new" *ngIf="w.flags.new">NEW!</span>
       <span id="flag__featured" *ngIf="w.flags.featured">FEATURED!</span>
-      <h4 id=description>{{w.description.features}}</h4>
-
+      <!-- Description -->
+      <h4 id="description" (click)="onClickDescription()">{{w.description.features}}</h4>
+      <!-- LIST -->
       <ul id=list>
         <li>{{w.description.day}}</li>
         <li style="margin-left: 20px;">{{w.description.contract}}</li>
@@ -15,9 +19,10 @@
       </ul>
       <hr class="divider">
     </div>
+    <!-- Flags -->
     <div class="container">
       <div class="flag" *ngFor="let tag of w.tags">
-        <span id="tags">{{tag}}</span>
+        <span id="tags" (click)="onClickTags()">{{tag}}</span>
       </div>
     </div>
   </div>
