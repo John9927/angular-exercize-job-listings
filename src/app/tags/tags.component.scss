@@ -1,0 +1,91 @@
+@import './../../assets/store/index.scss';
+
+.container {
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin-left: auto;
+  margin-top: 5px;
+}
+/* FLAG  */
+.flag {
+  right: 2rem;
+  padding: 1rem;
+  padding-right: 0rem;
+}
+
+span#tags {
+  font-size: 14px;
+  margin-right: 0.625rem;
+  background-color: $color-tags-background;
+  border-radius: 0.25rem;
+  padding: 0.188rem;
+  color: $color-tags;
+  font-weight: bold;
+  cursor: pointer;
+  margin-bottom: 1rem;
+}
+
+span#tags:hover {
+  background-color: $color-heavenly;
+  color: white;
+}
+
+@media only screen and (max-width: 935px) {
+  span#tags {
+    font-size: 13px;
+    background-color: $color-tags-background;
+    border-radius: 0.25rem;
+    padding: 0.188rem;
+    color: $color-tags;
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 1rem;
+  }
+
+  .container {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-left: auto;
+    margin-top: 0.3em;
+  }
+  .flag {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 0rem;
+    justify-content: flex-start;
+  }
+}
+
+@media only screen and (max-width: 785px) {
+  span#tags {
+    font-size: 12px;
+    background-color: $color-tags-background;
+    color: $color-tags;
+    border-radius: 0.25rem;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  .container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    padding-top: 1.5rem;
+    padding-left: 2.2rem;
+    padding-bottom: 0%;
+  }
+
+  .flag {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding: 0%;
+  }
+}

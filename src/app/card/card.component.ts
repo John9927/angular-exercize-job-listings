@@ -19,7 +19,4 @@ export class CardComponent implements OnInit {
   }
 
 
-  onClickTags() {
-    console.log("TODO: Open Filters");
-  }
 }

@@ -23,10 +23,11 @@
       <hr class="divider">
     </div>
     <!-- Flags -->
-    <div class="container">
+     <div class="container">
       <div class="flag" *ngFor="let tag of w.tags">
-        <span id="tags" (click)="onClickTags()">{{tag}}</span>
+        <app-tags [tag]="tag"></app-tags>
       </div>
     </div>
+
   </div>
 </div>
