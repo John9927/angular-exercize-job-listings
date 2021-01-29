@@ -99,7 +99,9 @@ span#tags {
   cursor: pointer;
   margin-bottom: 1rem;
 }
-
+h4#description:hover {
+  color: $color-heavenly;
+}
 span#tags:hover {
   background-color: $color-heavenly;
   color: white;

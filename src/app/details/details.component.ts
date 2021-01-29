@@ -11,8 +11,11 @@ import { ActivatedRoute } from '@angular/router';
 export class DetailsComponent implements OnInit {
 
   public works: Works | undefined;
-  constructor(private route: ActivatedRoute,
-    private dataSercive: DataService) { }
+
+  constructor(
+    private route: ActivatedRoute,
+    private dataSercive: DataService
+    ) { }
 
   ngOnInit(): void {
     this.getId();
@@ -21,7 +24,6 @@ export class DetailsComponent implements OnInit {
   getId(): void {
     const id = Number(this.route.snapshot.paramMap.get('id'));
     this.dataSercive.getDetail(id)
-      .subscribe(post => this.works = post);
+      .subscribe(detail => this.works = detail);
   }
-
 }
