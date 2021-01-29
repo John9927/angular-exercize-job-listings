@@ -1,5 +1,12 @@
 @import "../../assets/store/index.scss";
 
+a {
+  padding: 0.5rem;
+  background-color: aquamarine;
+  border-radius: 15px;
+  margin-left: 15px;
+  text-decoration: none;
+}
 
 h1 {
   display: flex;
@@ -112,6 +119,7 @@ span#tags:hover {
 }
 
 @media only screen and (max-width: 935px) {
+
   img {
     position: absolute;
     height: 50px;
@@ -149,6 +157,7 @@ span#tags:hover {
 }
 
 @media only screen and (max-width: 785px) {
+
   .divider {
     display: flex;
     position: absolute;
@@ -187,6 +196,14 @@ span#tags:hover {
   }
 }
 
+@media only screen and (max-width: 450px) {
+
+  a {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+  }
+}
 
 
 
