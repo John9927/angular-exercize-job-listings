@@ -1,21 +1,16 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-filters',
   templateUrl: './filters.component.html',
   styleUrls: ['./filters.component.scss']
 })
-export class FiltersComponent implements OnInit {
+export class FiltersComponent {
 
 
   public filtriSelezionati: string[] = [
     'Css',
   ];
-
-  constructor() { }
-
-  ngOnInit(): void {
-  }
 
   onClick() {
     console.log("Click Remove");
