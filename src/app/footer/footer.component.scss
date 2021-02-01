@@ -2,9 +2,11 @@
 
 div {
   padding: 1rem;
+  color: red;
+  position: relative;
   display: flex;
   justify-content: flex-end;
-  color: $color-heavenly;
+  width: 100%;
 }
 
 a {

@@ -91,15 +91,25 @@ span#tag:hover:last-child {
 }
 
 @media only screen and (max-width: 785px) {
+
+  .content_tags {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    width: 95%;
+    margin: auto;
+    margin-left: 1rem;
+  }
+
+
+
   span#tag {
     font-size: 14px;
-    margin-right: 5px;
     background-color: $color-tags-background;
     color: $color-tags;
     border-radius: 0.25rem;
     font-weight: bold;
     cursor: pointer;
-    // margin-bottom: 1rem;
   }
   .container {
     width: 100%;
