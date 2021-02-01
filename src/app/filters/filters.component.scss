@@ -15,10 +15,10 @@
 
 span#clear {
 width: 100%;
+margin: auto;
 display: flex;
 justify-content: flex-end;
 font-size: 12px;
-padding-top: 4px;
 cursor: pointer;
 }
 
@@ -26,7 +26,6 @@ span#clear:hover {
   color: $color-heavenly;
 }
 .filters {
-  // display: none;
   position:absolute;
   left:0;
   right:0;

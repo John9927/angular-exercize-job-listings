@@ -51,6 +51,16 @@ span#tag {
   }
 }
 
+span#tag:hover {
+    background-color: none !important;
+    color: $color-heavenly;
+}
+
+span#tag:hover:last-child {
+  background-color: $color-heavenly;
+  color: white;
+}
+
 @media only screen and (max-width: 935px) {
   span#tag {
     font-size: 14px;
