@@ -9,6 +9,7 @@ import { CardComponent } from './card/card.component';
 import { FiltersComponent } from './filters/filters.component';
 import { DetailsComponent } from './details/details.component';
 import { TagsComponent } from './tags/tags.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { TagsComponent } from './tags/tags.component';
     FiltersComponent,
     DetailsComponent,
     TagsComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,

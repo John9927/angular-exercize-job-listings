@@ -9,13 +9,13 @@
   margin: auto;
   margin-left: 1rem;
 }
-span#image {
+span#remove {
   padding: 4px;
   border-radius: 0px 4px 4px 0px;
   background-color: $color-heavenly;
   height: 23px;
 }
-span#image:hover {
+span#remove:hover {
   background-color: rgb(32, 32, 32);
 }
 
@@ -43,7 +43,6 @@ span#tag {
   padding: 0.188rem;
   color: $color-tags;
   font-weight: bold;
-  cursor: pointer;
 
   &:not(:last-child) {
     border-top-right-radius: unset !important;
@@ -53,12 +52,13 @@ span#tag {
 
 span#tag:hover {
     background-color: none !important;
-    color: $color-heavenly;
+    transition: 0.3s ease !important;
 }
 
 span#tag:hover:last-child {
   background-color: $color-heavenly;
   color: white;
+  zoom: 125% !important;
 }
 
 @media only screen and (max-width: 935px) {
