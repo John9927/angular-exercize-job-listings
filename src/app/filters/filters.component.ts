@@ -9,7 +9,8 @@ export class FiltersComponent {
 
 
   public filtriSelezionati: string[] = [
-    'Css',
+    'Frontend',
+    'CSS'
   ];
 
   onClick() {

@@ -83,22 +83,10 @@ h4 {
 }
 /* FLAG  */
 .flag {
-  right: 2rem;
-  padding: 1rem;
+  padding-top: 1rem;
   padding-right: 0rem;
 }
 
-span#tags {
-  font-size: 14px;
-  margin-right: 0.625rem;
-  background-color: $color-tags-background;
-  border-radius: 0.25rem;
-  padding: 0.188rem;
-  color: $color-tags;
-  font-weight: bold;
-  cursor: pointer;
-  margin-bottom: 1rem;
-}
 h4#description:hover {
   color: $color-heavenly;
 }
@@ -112,16 +100,6 @@ span#tags:hover {
     position: absolute;
     height: 50px;
     top: -24px;
-  }
-  span#tags {
-    font-size: 13px;
-    background-color: $color-tags-background;
-    border-radius: 0.25rem;
-    padding: 0.188rem;
-    color: $color-tags;
-    font-weight: bold;
-    cursor: pointer;
-    margin-bottom: 1rem;
   }
 
   .container {
@@ -151,14 +129,7 @@ span#tags:hover {
     margin-top: $size0625;
     width: 88%;
   }
-  span#tags {
-    font-size: 12px;
-    background-color: $color-tags-background;
-    color: $color-tags;
-    border-radius: 0.25rem;
-    font-weight: bold;
-    cursor: pointer;
-  }
+
   .container {
     width: 100%;
     display: flex;

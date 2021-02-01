@@ -1,5 +1,24 @@
 @import './../../assets/store/index.scss';
 
+
+.content_tags {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+  width: 95%;
+  margin: auto;
+  margin-left: 1rem;
+}
+span#image {
+  padding: 4px;
+  border-radius: 0px 4px 4px 0px;
+  background-color: $color-heavenly;
+  height: 23px;
+}
+span#image:hover {
+  background-color: rgb(32, 32, 32);
+}
+
 span {
   cursor: pointer;
 }
@@ -13,31 +32,28 @@ span {
 }
 /* FLAG  */
 .flag {
-  right: 2rem;
-  padding: 1rem;
+  padding-top: 1rem;
   padding-right: 0rem;
 }
 
-span#tags {
+span#tag {
   font-size: 14px;
-  margin-right: 0.625rem;
   background-color: $color-tags-background;
   border-radius: 0.25rem;
   padding: 0.188rem;
   color: $color-tags;
   font-weight: bold;
   cursor: pointer;
-  margin-bottom: 1rem;
-}
 
-span#tags:hover {
-  background-color: $color-heavenly;
-  color: white;
+  &:not(:last-child) {
+    border-top-right-radius: unset !important;
+    border-bottom-right-radius: unset !important;
+  }
 }
 
 @media only screen and (max-width: 935px) {
-  span#tags {
-    font-size: 13px;
+  span#tag {
+    font-size: 14px;
     background-color: $color-tags-background;
     border-radius: 0.25rem;
     padding: 0.188rem;
@@ -65,13 +81,15 @@ span#tags:hover {
 }
 
 @media only screen and (max-width: 785px) {
-  span#tags {
-    font-size: 12px;
+  span#tag {
+    font-size: 14px;
+    margin-right: 5px;
     background-color: $color-tags-background;
     color: $color-tags;
     border-radius: 0.25rem;
     font-weight: bold;
     cursor: pointer;
+    // margin-bottom: 1rem;
   }
   .container {
     width: 100%;
@@ -90,5 +108,6 @@ span#tags:hover {
     flex-wrap: wrap;
     justify-content: flex-start;
     padding: 0%;
+    padding-bottom: 0rem;
   }
 }

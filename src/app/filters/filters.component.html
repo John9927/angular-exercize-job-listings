@@ -1,5 +1,6 @@
 <div class="filters">
-  <div class="content-filters">
+  <div class="content_filter">
+    <input type="text" class="input_text">
     <app-tags *ngFor="let tag of filtriSelezionati" [tag]="tag" [isDestroyable]="true" (onDestroy)="deleteFilter($event)"></app-tags>
   </div>
 </div>

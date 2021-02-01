@@ -1,5 +1,18 @@
 @import './../../assets/store/index.scss';
 
+
+.input_text {
+  border: 0;
+  border-bottom: 1px solid black;
+  background: transparent;
+  transition: border-color 0.2s;
+}
+.input_text:focus {
+  outline: none;
+  border-bottom: 1px solid $color-title;
+  color: black;
+}
+
 .filters {
   // display: none;
   position:absolute;
@@ -9,7 +22,7 @@
   margin:0 auto;
   background-color: white;
   width: 86%;
-  padding: 0.7rem;
+  padding: 1rem;
   border-radius: 0.438rem;
   box-shadow: 3px 3px 12px rgb(0 0 0 / 20%);
 }
@@ -17,12 +30,10 @@ img {
   width: 15px;
   height: 15px;
 }
-.content__filters {
+.content_filter {
   width: 100%;
   display: flex;
   flex-direction: row;
-  margin-top: 0.9rem;
-  margin-left: 2rem;
 }
 
 span#tags {

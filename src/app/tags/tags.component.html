@@ -1,5 +1,7 @@
-<div>
-  <span (click)="clicked()" id="tags">{{tag}}</span>
-  <span (click)="destroyClick()" *ngIf="isDestroyable">X</span>
+<div class="content_tags">
+  <span (click)="clicked()" id="tag">{{tag}}</span>
+  <span id="image" (click)="destroyClick()" *ngIf="isDestroyable"><img src="../../assets/logo/icon-remove.svg"></span>
 </div>
+
+
 
