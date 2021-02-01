@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-filters',
@@ -19,6 +19,10 @@ export class FiltersComponent {
 
   deleteFilter(tag: string) {
     this.filtriSelezionati = this.filtriSelezionati.filter(el => el !== tag);
+  }
+
+  onClear() {
+    this.filtriSelezionati = [];
   }
 
 
