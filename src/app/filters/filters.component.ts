@@ -1,17 +1,26 @@
-import { Component, Input, Output, EventEmitter } from '@angular/core';
+import { Component, Input, Output, EventEmitter, OnInit, OnDestroy } from '@angular/core';
+import { TagsService } from '../tags.service';
+import { filter, takeUntil } from "rxjs/operators";
+import { Subject } from 'rxjs';
 
 @Component({
   selector: 'app-filters',
   templateUrl: './filters.component.html',
   styleUrls: ['./filters.component.scss']
 })
-export class FiltersComponent {
+export class FiltersComponent implements OnInit, OnDestroy {
 
+  private readonly destroy$: Subject<void> = new Subject();
 
-  public filtriSelezionati: string[] = [
-    'Frontend',
-    'CSS'
-  ];
+  public filtriSelezionati: string[] = [];
+
+  constructor(private readonly tagsService: TagsService) {}
+
+  ngOnInit() {
+    this.tagsService.tags$.pipe(takeUntil(this.destroy$)).subscribe(
+     (tag: string | null) => tag ? this.filtriSelezionati = [...this.filtriSelezionati, tag] : null
+    )
+  }
 
   onClick() {
     console.log("Click Remove");
@@ -25,5 +34,9 @@ export class FiltersComponent {
     this.filtriSelezionati = [];
   }
 
+  ngOnDestroy(): void {
+    this.destroy$.next();
+    this.destroy$.complete();
+  }
 
 }

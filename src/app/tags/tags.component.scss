@@ -1,5 +1,4 @@
-@import './../../assets/store/index.scss';
-
+@import "./../../assets/store/index.scss";
 
 .content_tags {
   display: flex;
@@ -51,8 +50,8 @@ span#tag {
 }
 
 span#tag:hover {
-    background-color: none !important;
-    transition: 0.3s ease !important;
+  background-color: none !important;
+  transition: 0.3s ease !important;
 }
 
 span#tag:hover:last-child {
@@ -91,7 +90,6 @@ span#tag:hover:last-child {
 }
 
 @media only screen and (max-width: 785px) {
-
   .content_tags {
     display: flex;
     justify-content: flex-start;
@@ -100,8 +98,6 @@ span#tag:hover:last-child {
     margin: auto;
     margin-left: 1rem;
   }
-
-
 
   span#tag {
     font-size: 14px;

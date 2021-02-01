@@ -1,18 +1,18 @@
 import { Injectable } from '@angular/core';
-import { Subject } from 'rxjs';
+import { BehaviorSubject } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
 })
 export class TagsService {
 
-  private tags = new Subject<string>();
+  private readonly tag = new BehaviorSubject<string | null>(null);
 
   constructor() { }
 
-  tags$ = this.tags.asObservable();
+  tags$ = this.tag.asObservable();
 
-  inTags(tag: string) {
-    this.tags.next(tag);
+  selectTag(tag: string) {
+    this.tag.next(tag);
   }
 }
