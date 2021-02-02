@@ -2,10 +2,10 @@
   <div class="content_filter">
     <app-tags *ngFor="let tag of filtriSelezionati" [tag]="tag" [isDestroyable]="true" (onDestroy)="deleteFilter($event)"></app-tags>
     <input type="text" class="input_text">
+    <app-dropdown></app-dropdown>
+
+
     <span id="clear" (click)="onClear()">Clear</span>
-    <div *ngFor="let f of filters">
-      {{f.tags}}
-    </div>
   </div>
 </div>
 

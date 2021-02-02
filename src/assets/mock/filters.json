@@ -1,24 +1,22 @@
 {
-  "filters" : [
-    {
-      "tags":[
-        "Frontend",
-        "Senior",
-        "Html",
-        "Css",
-        "JavaScript",
-        "Fullstack",
-        "Midweight",
-        "Python",
-        "React",
-        "Junior",
-        "Sass",
-        "Ruby",
-        "Backend",
-        "RoR",
-        "Vue",
-        "Django"
-      ]
-    }
+  "tags":[
+    "Frontend",
+    "Senior",
+    "Html",
+    "Css",
+    "JavaScript",
+    "Fullstack",
+    "Midweight",
+    "Python",
+    "React",
+    "Junior",
+    "Sass",
+    "Ruby",
+    "Backend",
+    "RoR",
+    "Vue",
+    "Django"
   ]
 }
+
+

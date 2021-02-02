@@ -1,7 +1,4 @@
-export interface Filter {
+export interface Filters {
   tags: string[];
 }
 
-export interface Filters {
-  filters: Filter[];
-}
