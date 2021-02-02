@@ -2,6 +2,7 @@ import { Component, OnInit, OnDestroy } from '@angular/core';
 import { TagsService } from '../tags.service';
 import { takeUntil } from "rxjs/operators";
 import { Subject } from 'rxjs';
+import { DataService } from '../data.service';
 
 @Component({
   selector: 'app-filters',
@@ -10,16 +11,18 @@ import { Subject } from 'rxjs';
 })
 export class FiltersComponent implements OnInit, OnDestroy {
 
+  public filters: any;
   private readonly destroy$: Subject<void> = new Subject();
-
   public filtriSelezionati: string[] = [];
 
-  constructor(private readonly tagsService: TagsService) {}
+  constructor(private readonly tagsService: TagsService, private dataService: DataService) { }
 
   ngOnInit() {
     this.tagsService.tags$.pipe(takeUntil(this.destroy$)).subscribe(
-     (tag: string | null) => tag ? this.filtriSelezionati = [...this.filtriSelezionati, tag] : null
-    )
+      (tag: string | null) => tag ? this.filtriSelezionati = [...this.filtriSelezionati, tag] : null
+    ),
+    // Takes all data from filters.json
+    this.dataService.getFilters().subscribe(data => this.filters = data);
   }
 
   onClick() {
@@ -38,5 +41,4 @@ export class FiltersComponent implements OnInit, OnDestroy {
     this.destroy$.next();
     this.destroy$.complete();
   }
-
 }

@@ -2,6 +2,6 @@ export interface Filter {
   tags: string[];
 }
 
-export interface RootObject {
+export interface Filters {
   filters: Filter[];
 }

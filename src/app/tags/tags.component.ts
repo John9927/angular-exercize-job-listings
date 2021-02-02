@@ -15,7 +15,6 @@ export class TagsComponent {
 
   constructor(private readonly tagsService: TagsService) {}
 
-
   clicked() {
     this.onClick.emit();
     this.tagsService.selectTag(this.tag);

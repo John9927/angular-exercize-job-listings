@@ -1,4 +1,5 @@
 import { Works } from './interfaces/works';
+import { Filters } from './interfaces/filters';
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http'
 import { Observable } from 'rxjs';
@@ -21,8 +22,8 @@ export class DataService {
     return this.http.get<Works>(`${url}/${id}`);
   }
 
-  getFilters(): Observable<Works[]> {
-    return this.http.get<Works[]>(url2);
-    }
+  getFilters(): Observable<Filters[]> {
+    return this.http.get<Filters[]>(url2);
+  }
 
 }
