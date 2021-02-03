@@ -38,6 +38,10 @@ export class FiltersComponent implements OnInit, OnDestroy {
     );
   }
 
+  onClickTags() {
+    console.log("Eccomi")
+  }
+
   onClick() {
     console.log("Click Remove");
   }

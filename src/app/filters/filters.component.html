@@ -4,11 +4,10 @@
       <input #searchBox id="input_text" (input)="search(searchBox.value)" />
 
       <ul class="search-result">
-        <li *ngFor="let tag of tags$ | async" >
+        <li *ngFor="let tag of tags$ | async" (click)="onClickTags()" >
             {{tag}}
         </li>
       </ul>
-      <!-- <app-dropdown></app-dropdown> -->
     </div>
     <app-tags *ngFor="let tag of filtriSelezionati" [tag]="tag" [isDestroyable]="true"
       (onDestroy)="deleteFilter($event)"></app-tags>

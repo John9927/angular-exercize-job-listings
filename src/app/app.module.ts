@@ -10,7 +10,6 @@ import { FiltersComponent } from './filters/filters.component';
 import { DetailsComponent } from './details/details.component';
 import { TagsComponent } from './tags/tags.component';
 import { FooterComponent } from './footer/footer.component';
-import { DropdownComponent } from './dropdown/dropdown.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +20,6 @@ import { DropdownComponent } from './dropdown/dropdown.component';
     DetailsComponent,
     TagsComponent,
     FooterComponent,
-    DropdownComponent,
   ],
   imports: [
     BrowserModule,
