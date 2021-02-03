@@ -57,7 +57,7 @@ span#tag:hover {
 span#tag:hover:last-child {
   background-color: $color-heavenly;
   color: white;
-  zoom: 125% !important;
+  zoom: 125%;
 }
 
 @media only screen and (max-width: 935px) {
@@ -70,6 +70,10 @@ span#tag:hover:last-child {
     font-weight: bold;
     cursor: pointer;
     margin-bottom: 1rem;
+  }
+
+  span#tag:hover {
+    zoom: normal !important;
   }
 
   .container {
@@ -97,6 +101,7 @@ span#tag:hover:last-child {
     width: 95%;
     margin: auto;
     margin-left: 1rem;
+
   }
 
   span#tag {
@@ -106,6 +111,8 @@ span#tag:hover:last-child {
     border-radius: 0.25rem;
     font-weight: bold;
     cursor: pointer;
+    margin: 0;
+    flex-wrap: wrap;
   }
   .container {
     width: 100%;

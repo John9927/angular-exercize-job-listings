@@ -27,7 +27,10 @@ export class TagsService {
     return this.http.get<string[]>(`${this.url}/?name=${term}`).pipe(
       map(el => {
         return el.filter(tag => tag.toLocaleLowerCase().indexOf(term.toLocaleLowerCase().trim()) !== -1)
-      })
+      }),
     );
   }
+
+
+
 }
