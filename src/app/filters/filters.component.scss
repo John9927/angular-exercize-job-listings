@@ -11,6 +11,15 @@ ul {
   top: 40px;
 }
 
+li {
+  margin-bottom: 10px;
+  margin-left: 5px;
+
+  &:first-child {
+    margin-top: 5px;
+  }
+}
+
 .dropdown {
   display: flex;
   flex-direction: column;
@@ -19,14 +28,13 @@ ul {
   top: 0%;
 
 }
-.input_text {
-  margin-left: 20px;
+input#input_text {
   border: 0;
   border-bottom: 1px solid black;
   background: transparent;
   transition: border-color 0.2s;
 }
-.input_text:focus {
+input#input_text:focus {
   outline: none;
   border-bottom: 1px solid $color-title;
   color: black;
