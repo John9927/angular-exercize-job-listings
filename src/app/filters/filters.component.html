@@ -1,13 +1,17 @@
 <div class="filters">
   <div class="content_filter">
-    <app-tags *ngFor="let tag of filtriSelezionati" [tag]="tag" [isDestroyable]="true" (onDestroy)="deleteFilter($event)"></app-tags>
-    <input type="text" class="input_text">
-    <app-dropdown></app-dropdown>
+    <app-tags *ngFor="let tag of filtriSelezionati" [tag]="tag" [isDestroyable]="true"
+      (onDestroy)="deleteFilter($event)"></app-tags>
+    <div>
+      <input #searchBox id="search-box" (input)="search(searchBox.value)" />
 
-
+      <ul class="search-result">
+        <li *ngFor="let tag of tags$ | async" >
+            {{tag}}
+        </li>
+      </ul>
+      <!-- <app-dropdown></app-dropdown> -->
+    </div>
     <span id="clear" (click)="onClear()">Clear</span>
   </div>
 </div>
-
-
-

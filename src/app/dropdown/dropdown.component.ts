@@ -16,4 +16,5 @@ export class DropdownComponent implements OnInit {
     this.dataService.getFilters().subscribe(data => this.filters = data);
   }
 
+
 }
