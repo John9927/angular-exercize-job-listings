@@ -4,6 +4,7 @@ import { Component, OnInit, OnDestroy } from '@angular/core';
 import { TagsService } from '../tags.service';
 import { debounceTime, distinctUntilChanged, switchMap, takeUntil, tap } from "rxjs/operators";
 import { Subject, Observable } from 'rxjs';
+import { HttpErrorResponse } from '@angular/common/http';
 
 @Component({
   selector: 'app-filters',
@@ -32,7 +33,7 @@ export class FiltersComponent implements OnInit, OnDestroy {
       debounceTime(300),
       distinctUntilChanged(),
       switchMap((term: string) => this.tagsService.searchTags(term)),
-    );
+    )
   }
 
   onClickTags(tag: string) {
