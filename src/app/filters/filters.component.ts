@@ -1,10 +1,9 @@
 import { Filters } from './../interfaces/filters';
 
-import { Component, OnInit, OnDestroy } from '@angular/core';
+import { Component, OnInit, OnDestroy, ViewChild, ElementRef } from '@angular/core';
 import { TagsService } from '../tags.service';
-import { debounceTime, distinctUntilChanged, switchMap, takeUntil, tap } from "rxjs/operators";
+import { debounceTime, distinctUntilChanged, switchMap, takeUntil } from "rxjs/operators";
 import { Subject, Observable } from 'rxjs';
-import { HttpErrorResponse } from '@angular/common/http';
 
 @Component({
   selector: 'app-filters',
@@ -13,15 +12,14 @@ import { HttpErrorResponse } from '@angular/common/http';
 })
 export class FiltersComponent implements OnInit, OnDestroy {
 
+  @ViewChild('searchBox') value: ElementRef<HTMLInputElement> | undefined;
+
   private readonly destroy$: Subject<void> = new Subject();
   public filtriSelezionati: string[] = [];
 
   tags$: Observable<Filters[]> | any;
   private searchTerms = new Subject<string>();
 
-  search(term: string): void {
-    this.searchTerms.next(term);
-  }
 
   constructor(private readonly tagsService: TagsService) { }
 
@@ -36,8 +34,17 @@ export class FiltersComponent implements OnInit, OnDestroy {
     )
   }
 
+  search(term: string): void {
+    this.searchTerms.next(term);
+  }
+
   onClickTags(tag: string) {
-    this.filtriSelezionati = [...this.filtriSelezionati, tag]
+    this.filtriSelezionati = [...this.filtriSelezionati, tag];
+
+    if (this.value) {
+    this.value.nativeElement.value = '';
+    }
+    this.searchTerms.next('');
   }
 
   onClick() {
