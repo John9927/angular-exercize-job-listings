@@ -1,8 +1,10 @@
+import { Works } from './../interfaces/works';
+import { DataService } from './../data.service';
 import { Filters } from './../interfaces/filters';
 
 import { Component, OnInit, OnDestroy, ViewChild, ElementRef } from '@angular/core';
 import { TagsService } from '../tags.service';
-import { debounceTime, distinctUntilChanged, switchMap, takeUntil } from "rxjs/operators";
+import { debounceTime, distinctUntilChanged, filter, switchMap, takeUntil } from "rxjs/operators";
 import { Subject, Observable } from 'rxjs';
 
 @Component({
@@ -19,18 +21,19 @@ export class FiltersComponent implements OnInit, OnDestroy {
 
   tags$: Observable<Filters[]> | any;
   private searchTerms = new Subject<string>();
+  public tags: Works[] | undefined;
 
-
-  constructor(private readonly tagsService: TagsService) { }
+  constructor(private readonly tagsService: TagsService, private dataService: DataService) { }
 
   ngOnInit() {
     this.tagsService.tags$.pipe(takeUntil(this.destroy$)).subscribe(
       (tag: string | null) => tag ? this.filtriSelezionati = [...this.filtriSelezionati, tag] : null
-    ),
+    )
+
     this.tags$ = this.searchTerms.pipe(
       debounceTime(300),
       distinctUntilChanged(),
-      switchMap((term: string) => this.tagsService.searchTags(term)),
+      switchMap((term: string) => this.tagsService.searchTags(term))
     )
   }
 
@@ -45,6 +48,14 @@ export class FiltersComponent implements OnInit, OnDestroy {
     this.value.nativeElement.value = '';
     }
     this.searchTerms.next('');
+    this.getDataWithFilters();
+  }
+
+  getDataWithFilters() {
+    this.dataService.getDataWithFilters(this.filtriSelezionati).subscribe(
+      tags => {console.log(tags)}
+    )
+
   }
 
   onClick() {
