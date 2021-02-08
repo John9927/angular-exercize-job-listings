@@ -19,7 +19,7 @@ export class TagsComponent {
   clicked() {
     this.onClick.emit();
     this.tagsService.selectTag(this.tag);
-    // this.dataService.getDataWithFilters();
+    //
   }
 
   destroyClick() {

@@ -1,4 +1,4 @@
-import { Works } from './../interfaces/works';
+import { Work } from './../interfaces/works';
 import { DataService } from './../data.service';
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
@@ -10,7 +10,7 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class DetailsComponent implements OnInit {
 
-  public works: Works | undefined;
+  public works: Work | undefined;
 
   constructor(
     private route: ActivatedRoute,

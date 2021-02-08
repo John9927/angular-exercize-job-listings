@@ -17,6 +17,9 @@ export class CardComponent implements OnInit {
     this.dataService.getData().subscribe( data => {this.work = data}, err => {console.log("Attiva il server mock-list.json con il comando json-server -w mock-list.json per visualizzare i dati")});
   }
 
+  // this.work = data -> funziona
+  // this.dataService.works = data
+
 
 
 

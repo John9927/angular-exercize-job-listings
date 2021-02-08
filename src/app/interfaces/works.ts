@@ -9,7 +9,8 @@ export interface Description {​​​​​
   contract: string;
   location: string;
 }​​​​​
-export interface Works {​​​​​
+
+export interface Work { ​​​​​
   id?: number;
   img: string;
   tech: string[];

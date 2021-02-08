@@ -1,4 +1,4 @@
-import { Works } from './../interfaces/works';
+import { Work } from './../interfaces/works';
 import { DataService } from './../data.service';
 import { Filters } from './../interfaces/filters';
 
@@ -21,7 +21,7 @@ export class FiltersComponent implements OnInit, OnDestroy {
 
   tags$: Observable<Filters[]> | any;
   private searchTerms = new Subject<string>();
-  public tags: Works[] | undefined;
+  public tags: Work[] | undefined;
 
   constructor(private readonly tagsService: TagsService, private dataService: DataService) { }
 
@@ -39,6 +39,10 @@ export class FiltersComponent implements OnInit, OnDestroy {
 
   search(term: string): void {
     this.searchTerms.next(term);
+  }
+
+  setFilter(val: string) {
+    this.dataService.filter = val;
   }
 
   onClickTags(tag: string) {
@@ -74,7 +78,5 @@ export class FiltersComponent implements OnInit, OnDestroy {
     this.destroy$.next();
     this.destroy$.complete();
   }
-
-
 
 }

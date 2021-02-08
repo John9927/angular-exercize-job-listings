@@ -18,8 +18,11 @@
     <input
     #searchBox id="input_text"
     (input)="search(searchBox.value)"
+    (input)="setFilter(filter.value)"
+    #filter
     autocomplete="off"
     name="text"/>
+
     </div>
     <span
       id="clear"
