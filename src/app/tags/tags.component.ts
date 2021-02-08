@@ -1,3 +1,4 @@
+import { DataService } from './../data.service';
 import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { TagsService } from '../tags.service';
 
@@ -13,11 +14,12 @@ export class TagsComponent {
   @Output() public onClick: EventEmitter<void> = new EventEmitter();
   @Output() public onDestroy: EventEmitter<string> = new EventEmitter();
 
-  constructor(private readonly tagsService: TagsService) {}
+  constructor(private readonly tagsService: TagsService, private dataService: DataService) {}
 
   clicked() {
     this.onClick.emit();
     this.tagsService.selectTag(this.tag);
+    // this.dataService.getDataWithFilters();
   }
 
   destroyClick() {
