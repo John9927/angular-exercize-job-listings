@@ -22,6 +22,4 @@ export class JobListingsComponent implements OnInit {
     this.dataService.AddNewFilter(tag);
     console.log('tag: ',tag);
   }
-
-
 }
