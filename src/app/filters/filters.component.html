@@ -18,7 +18,7 @@
     <input
     #searchBox id="input_text"
     (input)="search(searchBox.value)"
-    (input)="setFilter(filter.value)"
+    (keydown)="setFilter(filter.value)"
     #filter
     autocomplete="off"
     name="text"/>

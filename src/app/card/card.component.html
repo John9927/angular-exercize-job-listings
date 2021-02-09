@@ -1,9 +1,5 @@
-<!-- Header -->
-<app-header></app-header>
-<!-- Filters -->
-<app-filters></app-filters>
 <!-- Card -->
-<div class="card" *ngFor="let w of work">
+<div class="card" *ngFor="let w of dataService.works$ | async">
   <img [src]="w.img">
   <div class="content__card">
     <div class="title__card">
@@ -23,12 +19,10 @@
       <hr class="divider">
     </div>
     <!-- Flags -->
-     <div class="container">
+    <div class="container">
       <div class="flag" *ngFor="let tag of w.tags">
         <app-tags [tag]="tag"></app-tags>
       </div>
     </div>
   </div>
 </div>
-<!-- Footer -->
-<app-footer></app-footer>

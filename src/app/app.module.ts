@@ -10,6 +10,7 @@ import { FiltersComponent } from './filters/filters.component';
 import { DetailsComponent } from './details/details.component';
 import { TagsComponent } from './tags/tags.component';
 import { FooterComponent } from './footer/footer.component';
+import { JobListingsComponent } from './jobListings/jobListings.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { FooterComponent } from './footer/footer.component';
     DetailsComponent,
     TagsComponent,
     FooterComponent,
-  ],
+    JobListingsComponent
+   ],
   imports: [
     BrowserModule,
     AppRoutingModule,

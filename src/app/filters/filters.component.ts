@@ -4,7 +4,7 @@ import { Filters } from './../interfaces/filters';
 
 import { Component, OnInit, OnDestroy, ViewChild, ElementRef } from '@angular/core';
 import { TagsService } from '../tags.service';
-import { debounceTime, distinctUntilChanged, filter, switchMap, takeUntil } from "rxjs/operators";
+import { debounceTime, distinctUntilChanged, switchMap, takeUntil } from "rxjs/operators";
 import { Subject, Observable } from 'rxjs';
 
 @Component({
@@ -57,9 +57,10 @@ export class FiltersComponent implements OnInit, OnDestroy {
 
   getDataWithFilters() {
     this.dataService.getDataWithFilters(this.filtriSelezionati).subscribe(
-      tags => {console.log(tags)}
+      tags => {
+        console.log("Tag Selezionati:",tags)
+      }
     )
-
   }
 
   onClick() {

@@ -46,10 +46,10 @@ export class DataService {
 
 
   //
-  getFilter(): Observable<Work[]> {
-    return this.getData();
-    }
-  //
+  // getFilter(): Observable<Work[]> {
+  //   return
+  //   }
+
 
   getDataWithFilters(filters: string[]): Observable<Work[]> {
     return this.http.get<Work[]>(url).pipe(
