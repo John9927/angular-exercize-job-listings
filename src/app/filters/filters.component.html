@@ -1,35 +1,18 @@
 <div class="filters">
   <div class="content_filter">
-    <app-tags
-    *ngFor="let tag of selectedTags$ | async"
-    [tag]="tag"
-    [isDestroyable]="true"
-    (onDestroy)="deleteFilter($event)"
-
-  ></app-tags>
+    <app-tags *ngFor="let tag of selectedTags$ | async" [tag]="tag" [isDestroyable]="true"
+      (onDestroy)="deleteFilter($event)"></app-tags>
 
     <div class="autocomplete">
-    <ul class="search-result">
-      <li
-        *ngFor="let tag of tags$ | async"
-        (click)="onClickTags(tag)">
-        {{tag}}
-      </li>
-    </ul>
-    <input
-    #searchBox id="input_text"
-    (input)="search(searchBox.value)"
-    (keydown)="setFilter(filter.value)"
-    #filter
-    autocomplete="off"
-    name="text"/>
+      <ul class="search-result">
+        <li *ngFor="let tag of tags$ | async" (click)="onClickTags(tag)">
+          {{tag}}
+        </li>
+      </ul>
+      <input #searchBox id="input_text" (input)="search(searchBox.value)" (keydown.enter)="setFilter(filter.value)"
+        #filter autocomplete="off" name="text"/>
 
     </div>
-    <span
-      id="clear"
-      (click)="onClear()">
-      Clear
-    </span>
-
+    <div class="clear" (click)="onClear()">Clear</div>
   </div>
 </div>

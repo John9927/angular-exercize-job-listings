@@ -8,11 +8,17 @@
   margin: auto;
   margin-left: 1rem;
 }
+
+.content_tags {
+  display: contents;
+  padding: -1px;
+  width: 100%;
+  margin: auto;
+}
 span#remove {
-  padding: 4px;
+  padding: 3px;
   border-radius: 0px 4px 4px 0px;
   background-color: $color-heavenly;
-  height: 23px;
 }
 span#remove:hover {
   background-color: rgb(32, 32, 32);
@@ -22,12 +28,9 @@ span {
   cursor: pointer;
 }
 .container {
-  width: 50%;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
+  width: 70%;
   margin-left: auto;
-  margin-top: 5px;
+  margin-top: 4px;
 }
 /* FLAG  */
 .flag {
@@ -42,10 +45,12 @@ span#tag {
   padding: 0.188rem;
   color: $color-tags;
   font-weight: bold;
+  margin-left: 1rem;
 
   &:not(:last-child) {
     border-top-right-radius: unset !important;
     border-bottom-right-radius: unset !important;
+    zoom: 108%;
   }
 }
 
@@ -57,7 +62,6 @@ span#tag:hover {
 span#tag:hover:last-child {
   background-color: $color-heavenly;
   color: white;
-  zoom: 125%;
 }
 
 @media only screen and (max-width: 935px) {
@@ -70,14 +74,11 @@ span#tag:hover:last-child {
     font-weight: bold;
     cursor: pointer;
     margin-bottom: 1rem;
-  }
-
-  span#tag:hover {
-    zoom: normal !important;
+    margin-left: 0.5rem;
   }
 
   .container {
-    width: 50%;
+    width: 70%;
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
