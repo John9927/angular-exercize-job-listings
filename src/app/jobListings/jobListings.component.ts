@@ -1,3 +1,4 @@
+import { DataService } from './../data.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,9 +8,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class JobListingsComponent implements OnInit {
 
-  constructor() { }
+  constructor(public dataService: DataService) { }
 
   ngOnInit() {
+    this.getData();
   }
+
+  getData() {
+    this.dataService.getData().subscribe(data => { this.dataService.works = data }, err => { console.log("Attiva il server mock-list.json con il comando json-server -w mock-list.json per visualizzare i dati") });
+  }
+
+  setSelectedFilter(tag: string) {
+    this.dataService.AddNewFilter(tag);
+    console.log('tag: ',tag);
+  }
+
 
 }
