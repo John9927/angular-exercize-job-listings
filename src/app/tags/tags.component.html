@@ -1,4 +1,13 @@
 <div class="content_tags">
-  <span (click)="clicked()" id="tag">{{tag}}</span>
-  <span id="remove" (click)="destroyClick()" *ngIf="isDestroyable"><img src="../../assets/logo/icon-remove.svg"></span>
+  <span
+    (click)="clicked()"
+    id="tag">
+    {{tag}}
+  </span>
+  <span
+    id="remove"
+    (click)="destroyClick()"
+    *ngIf="isDestroyable">
+    <img src="../../assets/logo/icon-remove.svg">
+  </span>
 </div>

@@ -3,6 +3,10 @@
 <!-- Filters -->
 <app-filters></app-filters>
 <!-- Card -->
-<app-card></app-card>
+<app-card
+  *ngFor="let w of dataService.works$ | async"
+  [card]="w"
+  (onTagClick)="setSelectedFilter($event)"
+></app-card>
 <!-- Footer -->
 <app-footer></app-footer>

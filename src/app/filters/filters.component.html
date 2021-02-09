@@ -1,10 +1,11 @@
 <div class="filters">
   <div class="content_filter">
     <app-tags
-    *ngFor="let tag of filtriSelezionati"
+    *ngFor="let tag of selectedTags$ | async"
     [tag]="tag"
     [isDestroyable]="true"
     (onDestroy)="deleteFilter($event)"
+
   ></app-tags>
 
     <div class="autocomplete">

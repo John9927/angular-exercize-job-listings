@@ -1,27 +1,27 @@
 <!-- Card -->
-<div class="card" *ngFor="let w of dataService.works$ | async">
-  <img [src]="w.img">
+<div class="card">
+  <img [src]="card.img">
   <div class="content__card">
     <div class="title__card">
       <!-- TITLE -->
-      <span id=title>{{w.tech}}</span>
-      <!-- Flags New & Featured -->
-      <span id="flag__new" *ngIf="w.flags.new">NEW!</span>
-      <span id="flag__featured" *ngIf="w.flags.featured">FEATURED!</span>
+      <span id=title>{{card.tech}}</span>
+      <!-- Flags Necard & Featured -->
+      <span id="flag__new" *ngIf="card.flags.new">New!</span>
+      <span id="flag__featured" *ngIf="card.flags.featured">FEATURED!</span>
       <!-- Description -->
-      <h4 id="description" routerLink="/detail/{{w.id}}">{{w.description.features}}</h4>
+      <h4 id="description" routerLink="/detail/{{card.id}}">{{card.description.features}}</h4>
       <!-- LIST -->
       <ul id=list>
-        <li>{{w.description.day}}</li>
-        <li style="margin-left: 20px;">{{w.description.contract}}</li>
-        <li>{{w.description.location}}</li>
+        <li>{{card.description.day}}</li>
+        <li style="margin-left: 20px;">{{card.description.contract}}</li>
+        <li>{{card.description.location}}</li>
       </ul>
       <hr class="divider">
     </div>
     <!-- Flags -->
     <div class="container">
-      <div class="flag" *ngFor="let tag of w.tags">
-        <app-tags [tag]="tag"></app-tags>
+      <div class="flag">
+        <app-tags *ngFor="let tag of card.tags" [tag]="tag" (onClick)="onClickTag($event)"></app-tags>
       </div>
     </div>
   </div>

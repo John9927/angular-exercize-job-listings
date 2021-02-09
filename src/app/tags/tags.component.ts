@@ -16,7 +16,6 @@ export class TagsComponent {
 
   clicked() {
     this.onClick.emit(this.tag);
-    // this.tagsService.selectTag(this.tag); Metterlo su jobListings
   }
 
   destroyClick() {

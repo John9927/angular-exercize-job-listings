@@ -19,11 +19,12 @@ export class FiltersComponent implements OnInit, OnDestroy {
   private readonly destroy$: Subject<void> = new Subject();
   public filtriSelezionati: string[] = [];
 
+  readonly selectedTags$: Observable<string[]> = this.dataService.filter$;
   tags$: Observable<Filters[]> | any;
   private searchTerms = new Subject<string>();
   public tags: Work[] | undefined;
 
-  constructor(private readonly tagsService: TagsService, private dataService: DataService) { }
+  constructor(private readonly tagsService: TagsService, private readonly dataService: DataService) { }
 
   ngOnInit() {
     this.tagsService.tags$.pipe(takeUntil(this.destroy$)).subscribe(
@@ -42,7 +43,7 @@ export class FiltersComponent implements OnInit, OnDestroy {
   }
 
   setFilter(val: string) {
-    this.dataService.filter = val;
+    this.dataService.AddNewFilter(val);
   }
 
   onClickTags(tag: string) {
@@ -68,11 +69,11 @@ export class FiltersComponent implements OnInit, OnDestroy {
   }
 
   deleteFilter(tag: string) {
-    this.filtriSelezionati = this.filtriSelezionati.filter(el => el !== tag);
+   this.dataService.removeFilter(tag);
   }
 
   onClear() {
-    this.filtriSelezionati = [];
+    this.dataService.filter = [];
   }
 
   ngOnDestroy(): void {
