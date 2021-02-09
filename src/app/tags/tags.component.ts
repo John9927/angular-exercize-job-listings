@@ -1,6 +1,4 @@
-import { DataService } from './../data.service';
 import { Component, EventEmitter, Input, Output } from '@angular/core';
-import { TagsService } from '../tags.service';
 
 @Component({
   selector: 'app-tags',
@@ -11,15 +9,14 @@ export class TagsComponent {
   @Input() public tag: string = '';
   @Input() public isDestroyable: boolean = false;
   @Input() public ifThereIs: boolean = false;
-  @Output() public onClick: EventEmitter<void> = new EventEmitter();
+  @Output() public onClick: EventEmitter<string> = new EventEmitter();
   @Output() public onDestroy: EventEmitter<string> = new EventEmitter();
 
-  constructor(private readonly tagsService: TagsService, private dataService: DataService) {}
+  constructor() {}
 
   clicked() {
-    this.onClick.emit();
-    this.tagsService.selectTag(this.tag);
-    //
+    this.onClick.emit(this.tag);
+    // this.tagsService.selectTag(this.tag); Metterlo su jobListings
   }
 
   destroyClick() {
