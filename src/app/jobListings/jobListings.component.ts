@@ -15,7 +15,10 @@ export class JobListingsComponent implements OnInit {
   }
 
   getData() {
-    this.dataService.getData().subscribe(data => { this.dataService.works = data }, err => { console.log("Attiva il server mock-list.json con il comando json-server -w mock-list.json per visualizzare i dati") });
+    this.dataService.getData().subscribe(data => {
+      this.dataService.works = data
+      this.dataService.filter = [];
+    }, err => { console.log("Attiva il server mock-list.json con il comando json-server -w mock-list.json per visualizzare i dati") });
   }
 
   setSelectedFilter(tag: string) {

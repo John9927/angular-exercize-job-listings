@@ -4,7 +4,7 @@
 <app-filters></app-filters>
 <!-- Card -->
 <app-card
-  *ngFor="let w of dataService.works$ | async"
+  *ngFor="let w of dataService.filteredWorks$ | async"
   [card]="w"
   (onTagClick)="setSelectedFilter($event)"
 ></app-card>

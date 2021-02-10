@@ -53,24 +53,13 @@ export class FiltersComponent implements OnInit, OnDestroy {
     this.value.nativeElement.value = '';
     }
     this.searchTerms.next('');
-    this.getDataWithFilters();
-  }
-
-  getDataWithFilters() {
-    this.dataService.getDataWithFilters(this.filtriSelezionati).subscribe(
-      tags => {
-        console.log("Tag Selezionati:",tags)
-      }
-    )
-  }
-
-  onClick() {
-    console.log("Click Remove");
+    this.dataService.AddNewFilter(tag);
   }
 
   deleteFilter(tag: string) {
-   this.dataService.removeFilter(tag);
+    this.dataService.removeFilter(tag);
   }
+
 
   onClear() {
     this.dataService.filter = [];

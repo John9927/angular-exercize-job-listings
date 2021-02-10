@@ -10,7 +10,6 @@
       </ul>
       <input #searchBox id="input_text" (input)="search(searchBox.value)" (keydown.enter)="setFilter(filter.value)"
         #filter autocomplete="off" name="text"/>
-
     </div>
     <div class="clear" (click)="onClear()">Clear</div>
   </div>

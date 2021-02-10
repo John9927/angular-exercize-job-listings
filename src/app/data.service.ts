@@ -2,7 +2,7 @@ import { Work } from './interfaces/works';
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http'
 import { Observable, BehaviorSubject } from 'rxjs';
-import { map } from 'rxjs/operators';
+import { map, startWith } from 'rxjs/operators';
 
 const url = "http://localhost:3000/data";
 @Injectable({
@@ -26,9 +26,8 @@ export class DataService {
 
   AddNewFilter(val: string) {
     if (!this.filter.includes(val)) {
-    const newFilters = this.filter.length > 0 ? [...this.filter, val] : [val];
-    console.log(newFilters)
-    this._filter.next(newFilters);
+      const newFilters = this.filter.length > 0 ? [...this.filter, val] : [val];
+      this._filter.next(newFilters);
     }
   }
 
@@ -36,6 +35,8 @@ export class DataService {
     const newFilters = this.filter.filter(f => f !== val);
     this._filter.next(newFilters);
   }
+
+
   //Works
   private readonly _works = new BehaviorSubject<Work[]>([]);
   readonly works$ = this._works.asObservable();
@@ -52,24 +53,20 @@ export class DataService {
     return this.http.get<Work[]>(url);
   }
 
-
-
-  getDataWithFilters(filters: string[]): Observable<Work[]> {
-    return this.http.get<Work[]>(url).pipe(
-      // mappiamo i Works e filtriamo i tags raggruppandoli in una variabile
-      map((works: Work[]) => {
-        return works.filter((w: Work): any => {
-          const myVariable = filters.reduce((acc, f) => { return acc || w.tags.includes(f) }, false)
-          if(myVariable) {
-            return w
-          }
-        })
-      })
-    );
-  }
-
   getDetail(id: number): Observable<Work> {
     return this.http.get<Work>(`${url}/${id}`);
   }
 
+
+  readonly filteredWorks$ = this.filter$.pipe(
+    startWith([]),
+    map((filters: string[]) => {
+      if (filters.length > 0)  {
+        return this.works.filter((w: Work): any => {
+        return filters.reduce((acc, f) => {return acc || w.tags.includes(f)}, false)
+        });
+      }
+      return this.works;
+    })
+  )
 }
