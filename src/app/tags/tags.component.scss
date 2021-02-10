@@ -13,7 +13,6 @@ img {
 }
 .content_tags {
   display: contents;
-  padding: -1px;
   width: 100%;
   margin: auto;
 }
@@ -103,7 +102,8 @@ span#tag:hover:last-child {
     flex-direction: row;
     width: 95%;
     margin: auto;
-    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-bottom: 0.5rem;
 
   }
 
